@@ -1,14 +1,60 @@
 <app-layout>
-  <section
-    id="sec1"
-    style="width: 90%; background-color: black; height: 300px"
-  ></section>
-  <section
-    id="sec2"
-    style="width: 90%; background-color: rgb(0, 145, 29); height: 300px"
-  ></section>
-  <section
-    id="sec3"
-    style="width: 90%; background-color: rgb(255, 69, 69); height: 300px"
-  ></section>
+  <main class="mainContent">
+    <section id="about">
+      <div class="aboutContent">
+        <div class="imgContainer">
+          <img src="../assets/my_photo2.jpg" alt="" />
+        </div>
+        <h2 style="font-weight: 600">I'm Ramalakshmanan</h2>
+        <h4>Software Developer</h4>
+      </div>
+    </section>
+    <section id="overview">
+      <div class="overview">
+        <h2 style="text-align: left">About</h2>
+        <!-- <div> -->
+        <ul style="list-style-type: circle">
+          <li>Software Developer with 3.5+ years of experience</li>
+          <li>
+            Worked with Software Development Life Cycle(SDLC) and agile
+            methodologies
+          </li>
+          <li>
+            Good knowledge in Angular 2+, React, Javascript, Node JS and UI with
+            Responsive Designs
+          </li>
+          <li>Have good understanding of Python,Bootstrap, MongoDB,</li>
+        </ul>
+        <!-- </div> -->
+      </div>
+    </section>
+    <section id="personal_info">
+      <div class="personal_info">
+        <h2>Personal Information</h2>
+        <ng-container *ngFor="let info of personalInfo | keyvalue">
+          <div style="display: flex; flex-direction: column; padding: 5px">
+            <strong>{{ info.key + ":" }}</strong>
+            <span>{{ info.value }}</span>
+          </div>
+        </ng-container>
+      </div>
+    </section>
+    <section id="technical_skills">
+      <div class="technical_skills">
+        <div style="width: 100%">
+          <h2 style="font-weight: 600">{{ "Technical Skills" }}</h2>
+        </div>
+        <div class="skill_tag">HTML</div>
+        <div class="skill_tag">CSS3</div>
+        <div class="skill_tag">Javascript</div>
+        <div class="skill_tag">Angular 2+</div>
+        <div class="skill_tag">React</div>
+        <div class="skill_tag">Typescript</div>
+        <div class="skill_tag">Python</div>
+        <div class="skill_tag">Java</div>
+        <div class="skill_tag">Node.js</div>
+      </div>
+    </section>
+    <app-footer></app-footer>
+  </main>
 </app-layout>

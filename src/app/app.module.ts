@@ -10,10 +10,11 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { SideNavComponent } from './Shared/components/side-nav/side-nav.component';
-import { MatSidenavModule} from '@angular/material/sidenav'
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { FooterComponent } from './Shared/components/footer/footer.component'
 
 @NgModule({
-    declarations: [AppComponent, LayoutComponent, HeaderComponent, SideNavComponent],
+    declarations: [AppComponent, LayoutComponent, HeaderComponent, SideNavComponent, FooterComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -25,6 +26,6 @@ import { MatSidenavModule} from '@angular/material/sidenav'
     ],
     providers: [],
     bootstrap: [AppComponent],
-    exports: [LayoutComponent, HeaderComponent, SideNavComponent],
+    exports: [LayoutComponent, HeaderComponent, SideNavComponent, FooterComponent],
 })
 export class AppModule {}
