@@ -1,24 +1,6 @@
 @use '../styles.scss' as styles;
 
-.detail {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 10px;
-    padding-left: 30px;
-    padding-top: 20px;
-    flex-grow: 1;
-    text-align: left;
 
-    h2,
-    h3 {
-        margin: 0;
-    }
-
-    ul {
-        list-style-type: square;
-    }
-}
 
 .technical_skills {
     flex-direction: row !important;
@@ -71,7 +53,7 @@
 #education {
     box-sizing: border-box;
     padding: 20px 0;
-    box-sizing: border-box;
+
 }
 
 .overview,
@@ -80,7 +62,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(232, 230, 230));
+    background: linear-gradient(to bottom right, rgb(254, 253, 255), rgb(248, 249, 255));
     color: black;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.359);
     padding: 20px;
@@ -109,6 +91,27 @@
     height: 100%;
     margin: auto;
     padding-top: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    .detail {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 10px;
+            padding-left: 30px;
+            padding-top: 20px;
+            flex-grow: 1;
+            text-align: left;
+    
+            h2,
+            h3,h1 {
+                margin-bottom: 10px;
+            }
+    
+            ul {
+                list-style-type: square;
+            }
+        }
 }
 
 @media (min-width: 720px) {

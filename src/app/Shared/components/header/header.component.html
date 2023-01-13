@@ -6,6 +6,22 @@
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <span class="example-spacer"></span>
-  <span>My CV</span>
+  <span id="middle_span" class="example-spacer"></span>
+  <span id="appTitle">My CV</span>
+  <span id="desktop_spacer" class="example-spacer"></span>
+
+  <nav class="navItems">
+    <ul style="display: flex; align-items: center; padding: 0; margin: 0">
+      <ng-container *ngFor="let sec of sections; let i = index">
+        <li style="padding: 5px; display: inline;padding-left: 15px;">
+          <a
+            style="text-decoration: none; color: white; font-weight: 400;font-size: 15px;"
+            [routerLink]="['/']"
+            [fragment]="sec.id"
+            >{{ sec.link | titlecase }}</a
+          >
+        </li>
+      </ng-container>
+    </ul>
+  </nav>
 </mat-toolbar>

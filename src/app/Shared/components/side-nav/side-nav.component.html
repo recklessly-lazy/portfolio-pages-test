@@ -1,8 +1,13 @@
 <div class="sideNavContent">
-  <ul style="padding-top: 40px;">
+  <ul style="padding-top: 40px">
     <ng-container *ngFor="let sec of sections; let i = index">
-      <li style="padding: 20px;">
-        <a style="text-decoration: none; color: black" [routerLink]="['/']" [fragment]="'sec'+i">{{ sec | uppercase}}</a>
+      <li style="padding: 20px">
+        <a
+          style="text-decoration: none; color: black"
+          [routerLink]="['/']"
+          [fragment]="sec.id"
+          >{{ sec.link | uppercase }}</a
+        >
       </li>
     </ng-container>
   </ul>

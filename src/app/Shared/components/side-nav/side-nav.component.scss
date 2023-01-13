@@ -1,7 +1,6 @@
-
 @import '../../../../styles';
 
-:host{
+:host {
     position: fixed;
     height: 100%;
     width: 60%;
@@ -10,22 +9,35 @@
     background-color: white;
     z-index: 6;
 }
-.sideNavContent{
+
+.sideNavContent {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right , rgb(235, 229, 255), rgb(236, 223, 255));
+    background: linear-gradient(to right, rgb(235, 229, 255), rgb(236, 223, 255));
     display: flex;
     flex-direction: column;
     padding: 15px;
     padding-top: $headerHeight;
-    ul{
+
+    ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        li{
+
+        li {
             text-align: left;
             padding: 10px;
             // background-color: peachpuff;
         }
+    }
+}
+
+@media (min-width: 720px) {
+    :host {
+        display: none;
+    }
+
+    .sideNavContent {
+        display: none;
     }
 }

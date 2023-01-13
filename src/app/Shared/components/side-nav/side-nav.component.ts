@@ -24,13 +24,12 @@ export class SideNavComponent implements OnInit {
     toggleSideNav(show: boolean) {
         this.toggleNav.emit(show);
     }
-    sections: string[] = [
-        "About",
-        "personal info",
-        "tech skills",
-        "education",
-        "sample projects",
-        "contact links",
+    sections = [
+        { link: "About", id: "overview" },
+        { link: "personal info", id: "personal_info" },
+        { link: "skills", id: "technical_skills" },
+        { link: "education", id: "education" },
+        { link: "contact", id: "contact" },
     ];
     ngOnInit(): void {}
 }
