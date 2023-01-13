@@ -14,16 +14,15 @@
         <h2 style="text-align: left">About</h2>
         <!-- <div> -->
         <ul style="list-style-type: circle">
-          <li>Software Developer with 3.5+ years of experience</li>
+          <li>Software Developer, around 3.5+ years of IT experience</li>
           <li>
-            Worked with Software Development Life Cycle(SDLC) and agile
+            Worked on Software Development Life Cycle(SDLC) and agile
             methodologies
           </li>
           <li>
-            Good knowledge in Angular 2+, React, Javascript, Node JS and UI with
-            Responsive Designs
+            Good knowledge in Angular 2+, React.js, Javascript, Node JS , HTML,CSS3 and Responsive Designs
           </li>
-          <li>Have good understanding of Python,Bootstrap, MongoDB,</li>
+          <li>Have good knowledge of Python, Java</li>
         </ul>
         <!-- </div> -->
       </div>
@@ -55,9 +54,7 @@
         <div class="skill_tag">Node.js</div>
       </div>
     </section>
-    <section
-      id="education"
-    >
+    <section id="education">
       <div class="education">
         <div class="education_item" *ngFor="let item of educationInfo">
           <div class="batch">
@@ -65,7 +62,13 @@
             <span>{{ item.course }}</span>
           </div>
           <div class="detail">
-            
+            <h3>{{ item.course }}</h3>
+            <h2>{{ item.institution }}</h2>
+            <ul>
+              <li>
+                Passed with <strong>{{ item.percentage }}%</strong>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
