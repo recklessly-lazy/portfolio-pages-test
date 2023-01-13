@@ -55,6 +55,21 @@
         <div class="skill_tag">Node.js</div>
       </div>
     </section>
+    <section
+      id="education"
+    >
+      <div class="education">
+        <div class="education_item" *ngFor="let item of educationInfo">
+          <div class="batch">
+            <span>{{ item.batch }}</span>
+            <span>{{ item.course }}</span>
+          </div>
+          <div class="detail">
+            
+          </div>
+        </div>
+      </div>
+    </section>
     <app-footer></app-footer>
   </main>
 </app-layout>

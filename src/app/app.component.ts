@@ -7,6 +7,13 @@ interface PersonalInfo {
     address?: string;
     language: string;
 }
+
+interface Education {
+    batch: string;
+    course: string;
+    institution: string;
+    percentage: string;
+}
 @Component({
     selector: "app-root",
     templateUrl: "./app.component.html",
@@ -21,4 +28,24 @@ export class AppComponent {
         Phone: "+91 8667669489",
         Languages: "English, Tamil",
     };
+    educationInfo: Array<Education> = [
+        {
+            batch: "2012-2013",
+            course: "SSLC",
+            institution: "Sri Jayendra matric school",
+            percentage: "96",
+        },
+        {
+            batch: "2014-2015",
+            course: "Higher secondary",
+            institution: "Sri Jayendra matric school",
+            percentage: "91",
+        },
+        {
+            batch: "2015-2019",
+            course: "Bachelor of Engineering, E.E.E",
+            institution: "Mepco Schlenk Engineering College",
+            percentage: "74",
+        },
+    ];
 }

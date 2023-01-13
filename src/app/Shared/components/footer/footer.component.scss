@@ -3,7 +3,10 @@ footer{
     width: 100%;
     position: relative;
     padding: 30px;
-    background: linear-gradient(to right bottom, rgb(181, 223, 255), rgb(189, 212, 255));
+    background: linear-gradient(to right bottom, rgb(222, 241, 255), rgb(230, 239, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 :host{
     display: block;
