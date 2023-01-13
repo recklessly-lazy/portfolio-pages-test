@@ -1,0 +1,9 @@
+<div class="sideNavContent">
+  <ul>
+    <ng-container *ngFor="let sec of sections; let i = index">
+      <li>
+        <a [routerLink]="['/']" [fragment]="'sec'+i">{{ sec }}</a>
+      </li>
+    </ng-container>
+  </ul>
+</div>

@@ -1,5 +1,17 @@
-<div>
-  <app-header></app-header>
-
-  <ng-content></ng-content>
-</div>
+<app-header
+  [showSideNav]="showSideNav"
+  (onToggle)="toggleSideNav($event)"
+></app-header>
+<app-side-nav
+  [show]="showSideNav"
+  [@navTrigger]
+  *ngIf="showSideNav"
+  (toggleNav)="toggleSideNav($event)"
+></app-side-nav>
+<div
+  *ngIf="showSideNav"
+  class="backdrop"
+  [@backDropTrigger]
+  (click)="toggleSideNav(false)"
+></div>
+<ng-content></ng-content>

@@ -9,19 +9,22 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
+import { SideNavComponent } from './Shared/components/side-nav/side-nav.component';
+import { MatSidenavModule} from '@angular/material/sidenav'
 
 @NgModule({
-    declarations: [AppComponent, LayoutComponent, HeaderComponent],
+    declarations: [AppComponent, LayoutComponent, HeaderComponent, SideNavComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         MatToolbarModule,
         MatIconModule,
-        MatButtonModule
+        MatButtonModule,
+        MatSidenavModule
     ],
     providers: [],
     bootstrap: [AppComponent],
-    exports: [LayoutComponent, HeaderComponent],
+    exports: [LayoutComponent, HeaderComponent, SideNavComponent],
 })
 export class AppModule {}

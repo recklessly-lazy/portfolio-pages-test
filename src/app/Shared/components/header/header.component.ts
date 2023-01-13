@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
     selector: "app-header",
@@ -6,4 +6,10 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
     styleUrls: ["./header.component.scss"],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+    @Input() showSideNav!: boolean;
+    @Output() onToggle = new EventEmitter<boolean>()
+    toggleNav(show: boolean) {
+        this.onToggle.emit(show)
+    }
+}

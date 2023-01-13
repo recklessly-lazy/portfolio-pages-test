@@ -1,0 +1,29 @@
+
+:host{
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.312);
+    z-index: 9999;
+    background-color: white;
+    z-index: 6;
+}
+.sideNavContent{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right , rgb(249, 229, 255), rgb(255, 223, 248));
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 60px;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            text-align: left;
+            padding: 10px;
+            // background-color: peachpuff;
+        }
+    }
+}

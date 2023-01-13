@@ -1,19 +1,11 @@
 <mat-toolbar color="primary" class="toolbar">
-  <button mat-icon-button aria-label="Example icon-button with menu icon">
+  <button
+    mat-icon-button
+    aria-label="Example icon-button with menu icon"
+    (click)="toggleNav(!showSideNav)"
+  >
     <mat-icon>menu</mat-icon>
   </button>
   <span class="example-spacer"></span>
   <span>My App</span>
-  <!-- <button
-    mat-icon-button
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button
-    mat-icon-button
-    aria-label="Example icon-button with share icon"
-  >
-    <mat-icon>share</mat-icon>
-  </button> -->
 </mat-toolbar>

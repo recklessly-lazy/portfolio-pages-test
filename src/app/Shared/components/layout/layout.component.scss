@@ -1,8 +1,19 @@
 :host{
-    display: flex;
+    // display: flex;
     color: rgb(0, 0, 0);
-    flex-direction: column;
+    // flex-direction: column;
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgb(255, 198, 255), rgb(216, 191, 255));
+    position: relative;
+    overflow: auto;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.477);
+    backdrop-filter: blur(1px);
+    z-index: 5
 }
